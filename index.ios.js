@@ -12,7 +12,7 @@ import {
     View,
     Alert
 } from 'react-native';
-import {SearchDialog} from './src/components/searchDialog';
+import {SearchModal} from './src/components/searchDialog';
 
 export default class App extends Component {
     render() {
@@ -38,11 +38,11 @@ export default class App extends Component {
         ];
         return (
             <View style={{paddingTop: 100}}>
-                <SearchDialog
+                <SearchModal
                     label="Your Destination"
                     data={data}
                     value="CGK"
-                    onSelect={(result)=>{ Alert.alert('Your Selection', JSON.stringify(result)) }}
+                    onSelect={(result)=>{ console.log(result) }}
                 />
             </View>
         );

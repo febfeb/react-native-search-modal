@@ -26,7 +26,7 @@ render() {
     ];
     return (
         <View style={{paddingTop: 100}}>
-            <SearchDialog
+            <SearchModal
                 label="Your Destination"
                 data={data}
                 value="CGK"
@@ -38,7 +38,7 @@ render() {
 ```
 
 # Demo
-
+Not Yet Available
 
 # Install
 Not Yet Available at `npm`, you can manually copy the component at `src/components/searchDialog` folder

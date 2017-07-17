@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import {View, Text, TouchableHighlight, TouchableOpacity, ListView, Modal, TextInput} from 'react-native';
 import _ from 'lodash';
-import PopupDialog, { DialogTitle } from 'react-native-popup-dialog';
 import {Button} from '../common';
 
-export class SearchDialog extends Component {
+export class SearchModal extends Component {
     componentWillMount(){
         const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
         this.state = {
@@ -35,11 +34,10 @@ export class SearchDialog extends Component {
     }
 
     selectRow(rowData){
-        this.setState({modalVisible:false});
-
         this.setState({
-            selectedValue : rowData.key,
-            selectedText : rowData.text
+            modalVisible: false,
+            selectedValue: rowData.key,
+            selectedText: rowData.text
         });
 
         this.props.onSelect(rowData.key);
