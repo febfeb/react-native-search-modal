@@ -29,6 +29,7 @@ export class SearchModal extends Component {
             if(single.key === this.props.value){
                 this.state.selectedValue = single.key;
                 this.state.selectedText = single.text;
+                this.props.onSelect(single);
             }
         });
     }
@@ -40,7 +41,7 @@ export class SearchModal extends Component {
             selectedText: rowData.text
         });
 
-        this.props.onSelect(rowData.key);
+        this.props.onSelect(rowData);
     }
 
     renderRow(rowData){
@@ -119,7 +120,8 @@ export class SearchModal extends Component {
 
 const styles = {
     rootContainerStyle : {
-        flex : 1
+        //flex : 1
+        height: 40
     },
     rowStyle : {
         paddingVertical : 10,

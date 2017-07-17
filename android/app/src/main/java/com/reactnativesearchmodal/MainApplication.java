@@ -1,4 +1,4 @@
-package com.searchdialog;
+package com.reactnativesearchmodal;
 
 import android.app.Application;
 
