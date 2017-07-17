@@ -30,7 +30,7 @@ render() {
                 label="Your Destination"
                 data={data}
                 value="CGK"
-                onSelect={(result)=>{ Alert.alert('Your Selection', JSON.stringify(result)) }}
+                onSelect={(result)=>{ console.log(result)) }}
             />
         </View>
     );
@@ -41,4 +41,4 @@ render() {
 ![alt text](https://github.com/febfeb/react-native-search-modal/raw/master/demo.gif "Demo")
 
 # Install
-Not Yet Available at `npm`, you can manually copy the component at `src/components/searchDialog` folder
+Not Yet Available at `npm`, you can manually copy the component at `src/components/searchModal` folder
