@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import {View, Text, TouchableHighlight, TouchableOpacity, ListView, Modal, TextInput} from 'react-native';
-import _ from 'lodash';
-import {Button} from '../common';
+import Button from './Button';
 
-export class SearchModal extends Component {
+class SearchModal extends Component {
     componentWillMount(){
         const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
         this.state = {
@@ -169,3 +168,5 @@ const styles = {
         fontSize: 13
     }
 };
+
+module.exports = SearchModal;

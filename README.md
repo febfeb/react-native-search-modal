@@ -3,6 +3,10 @@ A simple React Native modal that allows you to search from given list
 
 # Usage
 ```javascript
+import SearchModal from 'react-native-search-modal';
+```
+
+```javascript
 render() {
     const data = [
         { key : 'ATL', text : 'Hartsfield Jackson Atlanta International' },
@@ -41,4 +45,6 @@ render() {
 ![alt text](https://github.com/febfeb/react-native-search-modal/raw/master/demo.gif "Demo")
 
 # Install
-Not Yet Available at `npm`, you can manually copy the component at `src/components/searchModal` folder
+```
+npm install --save react-native-search-modal
+```

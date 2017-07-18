@@ -1,22 +1,32 @@
 {
-	"name": "ReactNativeSearchModal",
-	"version": "0.0.1",
-	"private": true,
-	"scripts": {
-		"start": "node node_modules/react-native/local-cli/cli.js start",
-		"test": "jest"
-	},
-	"dependencies": {
-		"react": "16.0.0-alpha.12",
-		"react-native": "0.46.3"
-	},
-	"devDependencies": {
-		"babel-jest": "20.0.3",
-		"babel-preset-react-native": "2.1.0",
-		"jest": "20.0.4",
-		"react-test-renderer": "16.0.0-alpha.12"
-	},
-	"jest": {
-		"preset": "react-native"
-	}
+    "name": "react-native-search-modal",
+    "version": "1.0.0",
+    "description": "A simple React Native modal that allows you to search from given list",
+    "main": "SearchModal.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/febfeb/react-native-search-modal.git"
+    },
+    "keywords": [
+        "react-native",
+        "search",
+        "modal"
+    ],
+    "author": "Febrianto Arif Rakhman <feb@arkana.tech> (http://arkana.tech)",
+    "license": "ISC",
+    "dependencies": {
+        "react": "16.0.0-alpha.12",
+        "react-native": "0.46.3"
+    },
+    "files" : [
+        "SearchModal.js",
+        "Button.js"
+    ],
+    "bugs": {
+        "url": "https://github.com/febfeb/react-native-search-modal/issues"
+    },
+    "homepage": "https://github.com/febfeb/react-native-search-modal#readme"
 }
